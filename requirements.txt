@@ -1,0 +1,19 @@
+# Core deep-learning stack (versions match the environment the notebook was run in:
+# Python 3.12, CUDA 12.8 build of PyTorch on a Colab Tesla T4 GPU).
+# The >= lower bounds are the versions used; newer patch releases should also work,
+# but this combination has not been re-tested against other versions.
+torch>=2.11.0
+torchvision>=0.26.0
+
+# Data handling, metrics, and plotting
+numpy>=1.26
+pandas>=2.0
+scikit-learn>=1.6.1
+matplotlib>=3.10
+Pillow>=10.0
+
+# Dataset download (only needed if you fetch the data from Kaggle via the API)
+kaggle>=1.6
+
+# Notebook runtime (bundled with Jupyter/Colab; listed for local installs)
+ipython>=8.0
