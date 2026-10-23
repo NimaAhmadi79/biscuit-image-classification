@@ -1,0 +1,51 @@
+# ---- Dataset (kept out of Git; see data/README.md to obtain it) ----
+biscuit_dataset/
+data/biscuit_dataset/
+data/IndustryBiscuit/
+*.zip
+# Raw image/annotation files, wherever they land
+IndustryBiscuit/
+Images/
+Annotations.csv
+
+# ---- Trained model weights & generated run artifacts ----
+*.pth
+*.pt
+*.ckpt
+# (The curated figures under assets/ are committed intentionally and are not ignored.)
+
+# ---- Credentials / secrets (never commit) ----
+.kaggle/
+kaggle.json
+*access_token*
+.env
+*.key
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.ipynb_checkpoints/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- Jupyter / tooling ----
+.jupyter/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- OS / editor cruft ----
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
